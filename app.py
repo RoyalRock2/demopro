@@ -13,7 +13,7 @@ def display():
     msg = "This is your beautiful pic"
     name = request.args["name"].strip().replace(" ","")
     image = "yours.png"
-    if name.lower()=="bharath":
+    if "bharath" in name.lower():
         image = "mine.png"
         name = ""
         msg = "Get lost"
